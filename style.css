@@ -1,0 +1,71 @@
+* {
+    margin: 0;
+    padding: 0;
+    border-style: solid;
+    border-width: 0;
+}
+
+:root {
+    --border-radio-window: 7px;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #D3D3D3;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+#small-window {
+    transition: 0.6s;
+    display: flex;
+    flex-direction: column;
+    height: 100px;
+    width: 250px;
+    border-radius: var(--border-radio-window);
+}
+
+#small-window:hover {
+    transition: 0.6s;
+    transform: scale(1.2);
+    background-color: #f1f14d;
+}
+
+#criar-link {
+    background-color: #9fec91;
+    height: 30%;
+    border-radius: 0 0 var(--border-radio-window) var(--border-radio-window);
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#criar-link:hover {
+    background-color: #77DD77;
+}
+
+#input-arquivo {
+    display: none;
+}
+
+#fake-input-arquivo {
+    width: 100%;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    cursor: pointer;
+    background-color: #FDFD96;
+    border-radius: var(--border-radio-window) var(--border-radio-window) 0 0;
+}
+
+#fake-input-arquivo:hover {
+    background-color: #fafa86;
+}
